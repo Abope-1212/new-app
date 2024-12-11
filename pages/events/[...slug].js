@@ -15,7 +15,7 @@ export default function FilteredEventsPage(props) {
   const filterData = router.query.slug;
 
   const fetcher = (url) =>
-    fetch(url)
+    fetch("https://pre-loading-default-rtdb.firebaseio.com/events.json")
       .then((response) => response.json())
       .catch((err) => console.error("Fetching error: ", err));
 
