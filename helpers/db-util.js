@@ -2,7 +2,7 @@ import { MongoClient } from "mongodb";
 
 export async function connectDatabase() {
   const client = await MongoClient.connect(
-    "mongodb+srv://waleagbeniga06:Abope12191996.@cluster0.sc2bg.mongodb.net/event"
+    
   );
   return client;
 }
